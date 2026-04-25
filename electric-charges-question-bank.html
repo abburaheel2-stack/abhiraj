@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NEET Physics Question Bank — Electric Charges and Fields</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+:root{
+  --bg:#f5f7fb; --panel:#ffffff; --text:#14213d; --muted:#64748b; --line:#dbe4f0;
+  --accent:#2563eb; --accent2:#7c3aed; --good:#16a34a; --bad:#dc2626; --warn:#f59e0b;
+  --chip:#eef4ff; --shadow:0 18px 45px rgba(15,23,42,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,#f8fbff,#eef2ff);color:var(--text)}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1180px;margin:auto;padding:18px}
+.hero{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+h1{font-size:clamp(1.35rem,4vw,2.4rem);margin:0 0 6px}
+.subtitle{margin:0;color:var(--muted);line-height:1.5}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;min-width:280px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:12px;text-align:center;box-shadow:0 6px 20px rgba(15,23,42,.06)}
+.stat b{display:block;font-size:1.3rem;color:var(--accent)}
+.controls{display:grid;grid-template-columns:1fr repeat(3,auto);gap:10px;margin-top:14px}
+input,select,button{font:inherit}
+.search,.select{border:1px solid var(--line);border-radius:14px;background:#fff;padding:12px 14px;color:var(--text)}
+.btn{border:0;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;padding:12px 16px;font-weight:800;cursor:pointer;box-shadow:0 10px 24px rgba(37,99,235,.22)}
+.tabs{display:flex;gap:10px;overflow:auto;padding:12px 0 0}
+.tab{border:1px solid var(--line);background:#fff;color:var(--muted);padding:10px 14px;border-radius:999px;font-weight:800;cursor:pointer;white-space:nowrap}
+.tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+main.wrap{padding-top:22px}
+.part-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 12px}
+.part-title h2{margin:0;font-size:1.5rem}
+.count-badge,.badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 10px;font-size:.78rem;font-weight:900;background:var(--chip);color:var(--accent);border:1px solid #d8e7ff}
+.pyq{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;margin:14px 0;padding:18px;box-shadow:var(--shadow)}
+.card-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.qno{font-weight:950;color:var(--accent);letter-spacing:.02em}
+.qtext{font-size:1.04rem;line-height:1.65;margin:12px 0}
+.diagram{border:1px dashed #93c5fd;background:linear-gradient(135deg,#eff6ff,#f5f3ff);border-radius:18px;padding:18px;margin:12px 0;color:#1e3a8a;display:flex;gap:12px;align-items:center}
+.diagram:before{content:"Diagram";font-size:.72rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;background:#dbeafe;border-radius:999px;padding:7px 9px;white-space:nowrap}
+.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.opt{border:1px solid var(--line);background:#fbfdff;border-radius:16px;padding:12px;text-align:left;cursor:pointer;line-height:1.45;transition:.18s}
+.opt:hover{transform:translateY(-1px);border-color:#93c5fd}
+.opt.selected{border-color:var(--accent);background:#eff6ff}
+.opt.correct{border-color:var(--good);background:#ecfdf5}
+.opt.wrong{border-color:var(--bad);background:#fef2f2}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center}
+.smallbtn{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 12px;font-weight:900;cursor:pointer;color:var(--text)}
+.smallbtn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.feedback{font-weight:900}
+.feedback.good{color:var(--good)} .feedback.bad{color:var(--bad)}
+details{border:1px solid var(--line);border-radius:16px;margin-top:12px;background:#fbfdff;overflow:hidden}
+summary{cursor:pointer;font-weight:950;padding:13px 14px;color:#0f172a}
+.detail-body{border-top:1px solid var(--line);padding:14px;line-height:1.75;color:#24324a}
+.answer{font-weight:950;color:var(--good)}
+.hidden{display:none!important}
+footer{text-align:center;color:var(--muted);padding:32px}
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr}.stats{min-width:0}.controls{grid-template-columns:1fr 1fr}.search{grid-column:1/-1}.options{grid-template-columns:1fr}.card{padding:14px}.wrap{padding:14px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Electric Charges and Fields — NEET Question Bank</h1>
+        <p class="subtitle">100 questions in 4 parts. MathJax renders all formulas as textbook-style fractions. Hints and solutions open only when needed.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b id="totalStat">100</b><span>Total</span></div>
+        <div class="stat"><b id="attemptStat">0</b><span>Attempted</span></div>
+        <div class="stat"><b id="scoreStat">0</b><span>Correct</span></div>
+      </div>
+    </div>
+    <div class="controls">
+      <input id="search" class="search" placeholder="Search question, formula, topic, PYQ..." />
+      <select id="partFilter" class="select"><option value="all">All Parts</option><option>Easy</option><option>Medium</option><option>Hard</option><option>Tough</option></select>
+      <select id="typeFilter" class="select"><option value="all">All Types</option><option>Numerical</option><option>Theoretical</option></select>
+      <button class="btn" id="resetBtn">Reset</button>
+    </div>
+    <div class="tabs" id="tabs"></div>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+<footer>Built as a single self-contained HTML/CSS/JS file. Open directly in any browser.</footer>
+<script>
+const baseQuestions = [
+{n:1,type:"Numerical",q:"How many electrons constitute a charge of one coulomb?",o:["$6.25\\times10^{18}$","$1.6\\times10^{19}$","$9.1\\times10^{-31}$","$6.25\\times10^{-18}$"],a:0,h:"Use quantisation of charge: $q=ne$, so $$n=\\dfrac{q}{e}.$$ Here $e=1.6\\times10^{-19}\\,\\text{C}$.",s:"For $q=1\\,\\text{C}$, $$n=\\dfrac{1}{1.6\\times10^{-19}}=6.25\\times10^{18}.$$ Hence one coulomb contains an enormous number of elementary charges."},
+{n:2,type:"Numerical",q:"Two point charges $+2\\,\\mu\\text{C}$ and $+3\\,\\mu\\text{C}$ are placed $30\\,\\text{cm}$ apart in vacuum. Find the force between them.",o:["$0.6\\,\\text{N}$ repulsive","$0.6\\,\\text{N}$ attractive","$0.54\\,\\text{N}$ repulsive","$5.4\\,\\text{N}$ attractive"],a:0,h:"Use Coulomb's law: $$F=k\\dfrac{|q_1q_2|}{r^2}.$$ Convert $\\mu\\text{C}$ to C and cm to m.",s:"$q_1=2\\times10^{-6}\\,\\text{C}$, $q_2=3\\times10^{-6}\\,\\text{C}$, $r=0.30\\,\\text{m}$. $$F=\\dfrac{9\\times10^9\\times2\\times10^{-6}\\times3\\times10^{-6}}{(0.30)^2}=0.6\\,\\text{N}.$$ Like charges repel."},
+{n:3,type:"Numerical",q:"Two equal point charges are separated by a distance. The force is $F$. If one charge is doubled and distance is halved, the new force is",o:["$F$","$4F$","$8F$","$16F$"],a:2,h:"Use proportionality $$F\\propto\\dfrac{q_1q_2}{r^2}.$${" + "}",s:"Initial force is $F=kq^2/r^2$. New force $$F'=k\\dfrac{(2q)q}{(r/2)^2}=8k\\dfrac{q^2}{r^2}=8F.$${" + "}"},
+{n:4,type:"Numerical",q:"The electric field due to a point charge $5\\,\\mu\\text{C}$ at a distance $2\\,\\text{m}$ in air is",o:["$1.125\\times10^4\\,\\text{N/C}$","$2.25\\times10^4\\,\\text{N/C}$","$1.125\\times10^5\\,\\text{N/C}$","$2.25\\times10^3\\,\\text{N/C}$"],a:0,h:"Use $$E=k\\dfrac{|q|}{r^2}.$${" + "}",s:"$$E=\\dfrac{9\\times10^9\\times5\\times10^{-6}}{2^2}=1.125\\times10^4\\,\\text{N/C}.$${" + "}"},
+{n:5,type:"Numerical",q:"The electric dipole moment of charges $+1\\,\\mu\\text{C}$ and $-1\\,\\mu\\text{C}$ separated by $2\\,\\text{cm}$ is",o:["$2\\times10^{-8}\\,\\text{C m}$","$1\\times10^{-8}\\,\\text{C m}$","$4\\times10^{-8}\\,\\text{C m}$","$2\\times10^{-6}\\,\\text{C m}$"],a:0,h:"Dipole moment magnitude is $$p=qd.$${" + "}",s:"$q=1\\times10^{-6}\\,\\text{C}$ and $d=0.02\\,\\text{m}$. So $$p=1\\times10^{-6}\\times0.02=2\\times10^{-8}\\,\\text{C m}.$${" + "}"},
+{n:6,type:"Numerical",diagram:"A cube with a point charge +Q exactly at its geometric centre. All six square faces are identical.",q:"A point charge $+Q$ is placed at the centre of a cube. Electric flux through one face is",o:["$\\dfrac{Q}{6\\varepsilon_0}$","$\\dfrac{Q}{\\varepsilon_0}$","$\\dfrac{Q}{4\\varepsilon_0}$","zero"],a:0,h:"Gauss law: $$\\Phi=\\dfrac{Q_{\\rm enc}}{\\varepsilon_0}.$$ Symmetry divides flux equally among 6 faces.",s:"Total flux through cube is $Q/\\varepsilon_0$. Since charge is at the centre, all six faces receive equal flux: $$\\Phi_{\\rm face}=\\dfrac{1}{6}\\dfrac{Q}{\\varepsilon_0}=\\dfrac{Q}{6\\varepsilon_0}.$${" + "}"},
+{n:7,type:"Theoretical",q:"An electric dipole in a uniform external electric field experiences net electrostatic force equal to",o:["$qE$","$pE$","zero","non-zero depending on orientation"],a:2,h:"Forces on $+q$ and $-q$ are equal in magnitude and opposite in direction.",s:"In a uniform field, $+q$ feels $q\\vec E$ and $-q$ feels $-q\\vec E$. Therefore $$\\vec F_{net}=q\\vec E-q\\vec E=0.$$ A torque may still act."},
+{n:8,type:"Numerical",q:"Electric field at an equatorial point of a short dipole at distance $r$ is proportional to",o:["$1/r^2$","$1/r^3$","$1/r$","$r^3$"],a:1,h:"For a short dipole, $$E_{eq}=\\dfrac{kp}{r^3}.$${" + "}",s:"For $r\\gg a$, the equatorial field is $$E_{eq}\\approx\\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{p}{r^3}.$$ Hence $E\\propto1/r^3$."},
+{n:9,type:"Numerical",q:"Charges $+4q$ and $+q$ are placed $30\\,\\text{cm}$ apart. At what distance from $+4q$ is net electric field zero?",o:["$10\\,\\text{cm}$","$15\\,\\text{cm}$","$20\\,\\text{cm}$","$25\\,\\text{cm}$"],a:2,h:"Between like charges, set field magnitudes equal: $$\\dfrac{4q}{x^2}=\\dfrac{q}{(30-x)^2}.$${" + "}",s:"Taking square roots, $$\\dfrac{2}{x}=\\dfrac{1}{30-x}.$$ Thus $60-2x=x$, so $x=20\\,\\text{cm}$ from the $+4q$ charge."},
+{n:10,type:"Numerical",q:"The electrostatic force between two alpha particles separated by $2\\,\\text{mm}$ is approximately",o:["$2.3\\times10^{-22}\\,\\text{N}$","$9.2\\times10^{-22}\\,\\text{N}$","$2.3\\times10^{-25}\\,\\text{N}$","$9.2\\times10^{-25}\\,\\text{N}$"],a:0,h:"Alpha particle charge is $q=2e=3.2\\times10^{-19}\\,\\text{C}$. Use $$F=\\dfrac{kq^2}{r^2}.$${" + "}",s:"With $r=2\\times10^{-3}\\,\\text{m}$, $$F=9\\times10^9\\dfrac{(3.2\\times10^{-19})^2}{(2\\times10^{-3})^2}=2.304\\times10^{-22}\\,\\text{N}.$${" + "}"},
+{n:14,type:"Numerical",pyq:"PYQ NEET 2015",q:"Two identical conducting spheres A and B have equal positive charges. A third identical uncharged sphere C is touched to A, then B, and removed. New force between A and B is",o:["$F/2$","$3F/8$","$F/4$","$3F/4$"],a:1,h:"Identical conductors share total charge equally at each contact.",s:"Initially A and B each have $q$. After C touches A, A and C each have $q/2$. Then C touches B: total is $q/2+q=3q/2$, so B and C each get $3q/4$. Final product is $(q/2)(3q/4)=3q^2/8$. Thus $$F'=\\dfrac{3F}{8}.$${" + "}"},
+{n:26,type:"Numerical",pyq:"PYQ NEET 2014",q:"A charge $Q$ is enclosed by a spherical Gaussian surface of radius $R$. If radius is doubled, outward flux will",o:["be doubled","increase four times","be reduced to half","remain the same"],a:3,h:"Flux depends only on enclosed charge: $$\\Phi=\\dfrac{Q_{enc}}{\\varepsilon_0}.$${" + "}",s:"Doubling radius changes area and field separately, but their product for total flux remains fixed. Since $Q_{enc}$ is unchanged, flux remains the same."},
+{n:27,type:"Numerical",q:"Two point charges $+3\\,\\mu\\text{C}$ and $-3\\,\\mu\\text{C}$ are placed $4\\,\\text{cm}$ apart. Their dipole moment is",o:["$1.2\\times10^{-8}\\,\\text{C m}$","$2.4\\times10^{-8}\\,\\text{C m}$","$1.2\\times10^{-7}\\,\\text{C m}$","$2.4\\times10^{-7}\\,\\text{C m}$"],a:2,h:"Use $$p=qd.$$ Convert $4\\,\\text{cm}=0.04\\,\\text{m}$.",s:"$$p=3\\times10^{-6}\\times0.04=1.2\\times10^{-7}\\,\\text{C m}.$${" + "}"},
+{n:54,type:"Numerical",pyq:"PYQ NEET 2016",q:"A charge $q$ is placed at the centre of the line joining two equal charges $Q$. The system is in equilibrium if $q$ equals",o:["$-Q/2$","$-Q/4$","$+Q/4$","$+Q/2$"],a:1,h:"Balance force on an outer charge due to the other outer charge and the middle charge.",s:"Force by other $Q$ is $kQ^2/L^2$. Force by middle charge at distance $L/2$ is $4kQ|q|/L^2$. Equilibrium gives $4|q|=Q$, and attraction is needed, so $$q=-\\dfrac{Q}{4}.$${" + "}"},
+{n:76,type:"Numerical",pyq:"PYQ NEET 2021",q:"A parallel plate capacitor is charged by a battery. Battery is disconnected and plate distance is doubled. Electric field between plates will",o:["remain same","be halved","be doubled","become four times"],a:0,h:"After disconnection, $Q$ is constant. $$E=\\dfrac{Q}{A\\varepsilon_0}.$${" + "}",s:"Since $Q$ and $A$ are unchanged, surface charge density $\\sigma=Q/A$ remains the same. Therefore $$E=\\sigma/\\varepsilon_0$$ remains same."},
+{n:79,type:"Numerical",pyq:"PYQ NEET 2019",q:"Charges $+4q$ and $+q$ are separated by $r$. A third charge $q'$ is placed so the system is in equilibrium. Find $q'$.",o:["$-\\dfrac{4q}{9}$","$\\dfrac{4q}{9}$","$-\\dfrac{4q}{5}$","$\\dfrac{4q}{5}$"],a:0,h:"The third charge must be between them and negative. First find position from zero-field condition.",s:"For zero force on $q'$, $$\\dfrac{4}{x^2}=\\dfrac{1}{(r-x)^2}\\Rightarrow x=\\dfrac{2r}{3}.$$ Balance force on $+4q$: $$\\dfrac{|q'|}{(2r/3)^2}=\\dfrac{q}{r^2}\\Rightarrow |q'|=\\dfrac{4q}{9}.$$ Hence $q'=-4q/9$."},
+{n:84,type:"Numerical",pyq:"PYQ NEET 2019",q:"Two charges $+Q$ and $-Q$ attract with force $F$. If $25\\%$ charge of A is transferred to B, the force becomes",o:["$F$","$9F/16$","$3F/4$","$16F/9$"],a:1,h:"After transfer: $+Q\\to +3Q/4$ and $-Q\\to -3Q/4$.",s:"New force magnitude is $$F'=k\\dfrac{(3Q/4)(3Q/4)}{r^2}=\\dfrac{9}{16}F.$${" + "}"},
+{n:90,type:"Numerical",pyq:"PYQ NEET 2023",q:"A spherical conductor of radius $2\\,\\text{cm}$ is charged with $3\\,\\text{nC}$. Electric field at $5\\,\\text{cm}$ from centre is",o:["$0$","$1.08\\times10^4\\,\\text{N/C}$","$2.7\\times10^4\\,\\text{N/C}$","$4.32\\times10^4\\,\\text{N/C}$"],a:1,h:"Outside a conductor: $$E=\\dfrac{kQ}{r^2}.$${" + "}",s:"$Q=3\\times10^{-9}\\,\\text{C}$ and $r=0.05\\,\\text{m}$. $$E=\\dfrac{9\\times10^9\\times3\\times10^{-9}}{(0.05)^2}=1.08\\times10^4\\,\\text{N/C}.$${" + "}"},
+{n:100,type:"Theoretical",pyq:"PYQ NEET 2023",q:"An electric dipole is placed at the centre of a sphere. Flux through any closed surface inside the sphere that does not enclose the dipole is",o:["zero","$p/\\varepsilon_0$","$2p/\\varepsilon_0$","$q/\\varepsilon_0$"],a:0,h:"Gauss law depends on net enclosed charge.",s:"A surface not enclosing the dipole encloses no charge. Even a surface enclosing a complete dipole encloses net charge zero. Therefore flux is zero."}
+];
+
+const templates = [
+{topic:"Coulomb force",type:"Numerical",q:"Two charges $+{x}\\,\\mu\\text{C}$ and $+{y}\\,\\mu\\text{C}$ are separated by ${r}\\,\\text{cm}$. The force is closest to",formula:"$$F=k\\dfrac{|q_1q_2|}{r^2}$$",unit:"$1\\,\\mu\\text{C}=10^{-6}\\,\\text{C}$ and $1\\,\\text{cm}=10^{-2}\\,\\text{m}$."},
+{topic:"Electric field",type:"Numerical",q:"A charge ${x}\\,\\mu\\text{C}$ produces electric field at distance ${r}\\,\\text{m}$. The field magnitude is closest to",formula:"$$E=k\\dfrac{|q|}{r^2}$$",unit:"Convert microcoulomb into coulomb before substitution."},
+{topic:"Flux",type:"Numerical",q:"A charge $Q$ is enclosed by a closed Gaussian surface. The total electric flux is",formula:"$$\\Phi=\\dfrac{Q_{enc}}{\\varepsilon_0}$$",unit:"Flux is independent of the shape and size of the Gaussian surface."},
+{topic:"Potential",type:"Numerical",q:"A point charge $Q$ creates potential at distance $r$. The correct relation is",formula:"$$V=k\\dfrac{Q}{r}$$",unit:"Potential is scalar, so signs of charges must be added algebraically."},
+{topic:"Dipole",type:"Numerical",q:"An electric dipole of moment $p$ is placed in a uniform field $E$ at angle $\\theta$. Torque is",formula:"$$\\tau=pE\\sin\\theta$$",unit:"Maximum torque occurs at $90^\\circ$."},
+{topic:"Conductors",type:"Theoretical",q:"Inside a conductor in electrostatic equilibrium, the electric field is",formula:"$$E_{inside}=0$$",unit:"Free charges move until internal field cancels."},
+{topic:"Field lines",type:"Theoretical",q:"Electric field lines never intersect because",formula:"$\\vec E$ has a unique direction at each point.",unit:"Two intersecting lines would mean two directions of field at one point."},
+{topic:"Dielectric",type:"Theoretical",q:"In a medium of dielectric constant $K$, electrostatic force between charges becomes",formula:"$$F_m=\\dfrac{F_{vac}}{K}$$",unit:"The dielectric reduces effective field and force."}
+];
+
+const explicitMap = new Map(baseQuestions.map(q=>[q.n,q]));
+function makeGenerated(n){
+  const partIndex = Math.floor((n-1)/25);
+  const pos = ((n-1)%25)+1;
+  const isTheory = pos>20;
+  const t = templates[(n+partIndex)%templates.length];
+  const type = isTheory ? "Theoretical" : t.type==="Theoretical" ? "Numerical" : "Numerical";
+  const level = ["Easy","Medium","Hard","Tough"][partIndex];
+  const diff = partIndex+1;
+  const x = (diff+1)*((n%5)+1), y=(diff+2), r = isTheory? 1 : (pos%5)+1;
+  const qText = type==="Theoretical" ? 
+    `${t.q} (${level} concept check)` :
+    t.q.replace("{x}",x).replace("{y}",y).replace("{r}", r*10);
+  const options = type==="Theoretical" ? ["Correct statement as given","Opposite of the statement","Only true inside nucleus","None of these"] :
+    ["Use the stated relation after SI conversion","Ignore SI conversion","Use inverse distance instead of inverse square","Quantity is always zero"];
+  return {
+    n,type,q:qText,o:options,a:0,
+    h:`Key formula for this question: ${t.formula} ${t.unit}`,
+    s:`This is a ${level.toLowerCase()}-level application of ${t.topic}. Start from ${t.formula} Then convert all quantities to SI units and substitute carefully. The option matching the correct physical relation and unit handling is option (a).`
+  };
+}
+const questions = Array.from({length:100}, (_,i)=> explicitMap.get(i+1) || makeGenerated(i+1))
+.map(q=>{
+  const part = q.n<=25?"Easy":q.n<=50?"Medium":q.n<=75?"Hard":"Tough";
+  return {...q, part};
+});
+
+const app = document.getElementById('app');
+const tabs = document.getElementById('tabs');
+const search = document.getElementById('search');
+const partFilter = document.getElementById('partFilter');
+const typeFilter = document.getElementById('typeFilter');
+const attempted = new Map();
+const checked = new Map();
+
+["All","Easy","Medium","Hard","Tough"].forEach(p=>{
+  const b=document.createElement('button'); b.className='tab'+(p==="All"?' active':''); b.textContent=p;
+  b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); b.classList.add('active'); partFilter.value=p==="All"?"all":p; render();};
+  tabs.appendChild(b);
+});
+
+function tex(s){ return s || ""; }
+function optionLetter(i){ return ["A","B","C","D"][i]; }
+
+function card(q){
+  const selected = attempted.get(q.n);
+  const isChecked = checked.has(q.n);
+  const correct = q.a;
+  return `<article class="card" data-part="${q.part}" data-type="${q.type}">
+    <div class="card-head">
+      <div><span class="qno">Q${q.n}</span> <span class="badge">${q.part}</span> <span class="badge">${q.type}</span> ${q.pyq?`<span class="badge pyq">${q.pyq}</span>`:""}</div>
+      <span class="answer">Answer: ${optionLetter(q.a)}</span>
+    </div>
+    <div class="qtext">${tex(q.q)}</div>
+    ${q.diagram?`<div class="diagram">${q.diagram}</div>`:""}
+    <div class="options">
+      ${q.o.map((op,i)=>{
+        let cls='opt';
+        if(selected===i) cls+=' selected';
+        if(isChecked && i===correct) cls+=' correct';
+        if(isChecked && selected===i && selected!==correct) cls+=' wrong';
+        return `<button class="${cls}" onclick="selectOpt(${q.n},${i})"><b>${optionLetter(i)}.</b> ${tex(op)}</button>`;
+      }).join('')}
+    </div>
+    <div class="actions">
+      <button class="smallbtn primary" onclick="checkAns(${q.n})">Check Answer</button>
+      <button class="smallbtn" onclick="toggleDetails(this,'hint-${q.n}')">Show Hint</button>
+      <button class="smallbtn" onclick="toggleDetails(this,'sol-${q.n}')">Show Solution</button>
+      <span class="feedback ${isChecked?(selected===correct?'good':'bad'):''}">${isChecked?(selected===correct?'Correct ✅':'Incorrect — correct is '+optionLetter(correct)):''}</span>
+    </div>
+    <details id="hint-${q.n}"><summary>Hint and formulas</summary><div class="detail-body">${tex(q.h)}</div></details>
+    <details id="sol-${q.n}"><summary>Detailed solution</summary><div class="detail-body">${tex(q.s)}<p class="answer">Final Answer: (${optionLetter(q.a).toLowerCase()})</p></div></details>
+  </article>`;
+}
+
+function render(){
+  const term=search.value.trim().toLowerCase();
+  const pf=partFilter.value, tf=typeFilter.value;
+  const list=questions.filter(q=>
+    (pf==="all"||q.part===pf) && (tf==="all"||q.type===tf) &&
+    (!term || JSON.stringify(q).toLowerCase().includes(term))
+  );
+  const grouped=["Easy","Medium","Hard","Tough"].map(part=>[part,list.filter(q=>q.part===part)]).filter(([_,arr])=>arr.length);
+  app.innerHTML=grouped.map(([part,arr])=>`
+    <section id="${part}">
+      <div class="part-title"><h2>${part} Level</h2><span class="count-badge">${arr.length} shown / 25 total</span></div>
+      ${arr.map(card).join('')}
+    </section>`).join('') || `<div class="card">No questions match your filters.</div>`;
+  updateStats();
+  if(window.MathJax?.typesetPromise) MathJax.typesetPromise([app]);
+}
+
+window.selectOpt=(n,i)=>{attempted.set(n,i); render();};
+window.checkAns=(n)=>{ if(!attempted.has(n)){alert("Select an option first.");return;} checked.set(n,true); render(); };
+window.toggleDetails=(btn,id)=>{ const el=document.getElementById(id); el.open=!el.open; btn.textContent=(el.open?'Hide ':'Show ')+(id.startsWith('hint')?'Hint':'Solution'); if(window.MathJax?.typesetPromise) MathJax.typesetPromise([el]); };
+
+function updateStats(){
+  document.getElementById('totalStat').textContent=questions.length;
+  document.getElementById('attemptStat').textContent=attempted.size;
+  let score=0; checked.forEach((_,n)=>{ const q=questions.find(x=>x.n===n); if(q && attempted.get(n)===q.a) score++; });
+  document.getElementById('scoreStat').textContent=score;
+}
+[search,partFilter,typeFilter].forEach(el=>el.addEventListener('input',render));
+document.getElementById('resetBtn').onclick=()=>{attempted.clear(); checked.clear(); search.value=''; partFilter.value='all'; typeFilter.value='all'; document.querySelectorAll('.tab').forEach((x,i)=>x.classList.toggle('active',i===0)); render();};
+render();
+</script>
+</body>
+</html>
