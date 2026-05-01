@@ -109,15 +109,15 @@
 [data-theme="light"] .coach-mode-wrap{background:rgba(99,102,241,.05);border-color:rgba(99,102,241,.15)}
 [data-theme="light"] .coach-mode-slider{background:rgba(0,0,0,.12)}
 
-/* Gemini panel */
-[data-theme="light"] .gemini-api-input{background:#f5f5fc;border-color:rgba(0,0,0,.12);color:var(--text-primary)}
-[data-theme="light"] .gemini-msg-urgent{background:rgba(239,68,68,.06);border-color:rgba(239,68,68,.2)}
-[data-theme="light"] .gemini-msg-warn{background:rgba(245,158,11,.06);border-color:rgba(245,158,11,.2)}
-[data-theme="light"] .gemini-msg-good{background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.2)}
-[data-theme="light"] .gemini-msg-tip{background:rgba(66,133,244,.06);border-color:rgba(66,133,244,.2)}
-[data-theme="light"] .gemini-loading{background:rgba(66,133,244,.05);border-color:rgba(66,133,244,.18)}
-[data-theme="light"] .gemini-refresh-btn{background:rgba(66,133,244,.08);border-color:rgba(66,133,244,.2)}
-[data-theme="light"] .gemini-clear-btn{background:rgba(239,68,68,.06);border-color:rgba(239,68,68,.18)}
+/* OpenRouter panel */
+[data-theme="light"] .openrouter-api-input{background:#f5f5fc;border-color:rgba(0,0,0,.12);color:var(--text-primary)}
+[data-theme="light"] .openrouter-msg-urgent{background:rgba(239,68,68,.06);border-color:rgba(239,68,68,.2)}
+[data-theme="light"] .openrouter-msg-warn{background:rgba(245,158,11,.06);border-color:rgba(245,158,11,.2)}
+[data-theme="light"] .openrouter-msg-good{background:rgba(16,185,129,.06);border-color:rgba(16,185,129,.2)}
+[data-theme="light"] .openrouter-msg-tip{background:rgba(66,133,244,.06);border-color:rgba(66,133,244,.2)}
+[data-theme="light"] .openrouter-loading{background:rgba(66,133,244,.05);border-color:rgba(66,133,244,.18)}
+[data-theme="light"] .openrouter-refresh-btn{background:rgba(66,133,244,.08);border-color:rgba(66,133,244,.2)}
+[data-theme="light"] .openrouter-clear-btn{background:rgba(239,68,68,.06);border-color:rgba(239,68,68,.18)}
 
 /* Focus timer widget */
 [data-theme="light"] #tw{background:rgba(255,255,255,.98);border-color:rgba(0,0,0,.1);box-shadow:0 8px 32px rgba(0,0,0,.12)}
@@ -190,9 +190,9 @@
 /* Notif banner */
 [data-theme="light"] .notif-banner{background:rgba(99,102,241,.06);border-color:rgba(99,102,241,.2)}
 
-/* Coach tab gemini */
-[data-theme="light"] .coach-tab.gemini-tab{background:rgba(66,133,244,.05);border-color:rgba(66,133,244,.15)!important}
-[data-theme="light"] .coach-tab.gemini-tab.active{background:rgba(66,133,244,.12);border-color:rgba(66,133,244,.3)!important}
+/* Coach tab openrouter */
+[data-theme="light"] .coach-tab.openrouter-tab{background:rgba(66,133,244,.05);border-color:rgba(66,133,244,.15)!important}
+[data-theme="light"] .coach-tab.openrouter-tab.active{background:rgba(66,133,244,.12);border-color:rgba(66,133,244,.3)!important}
 
 /* =========================================================
    RESET & BASE
@@ -936,17 +936,17 @@ h1,h2,h3,h4{font-family:'Syne',sans-serif}
 .layout-pill{padding:.35rem .9rem;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--text-muted);font-size:.72rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;display:flex;align-items:center;gap:.35rem}
 .layout-pill.active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 12px rgba(99,102,241,.35)}
 
-/* ── Gemini AI Integration ── */
-.gemini-api-wrap{display:flex;gap:.5rem;align-items:center;margin-top:.6rem}
-.gemini-api-input{flex:1;background:rgba(10,10,22,.7);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.5rem .75rem;color:var(--text-primary);font-family:'DM Sans',sans-serif;font-size:.76rem;transition:border-color .2s}
-.gemini-api-input:focus{outline:none;border-color:rgba(99,102,241,.6);box-shadow:0 0 0 3px rgba(99,102,241,.1)}
-.gemini-save-btn{padding:.45rem .9rem;background:linear-gradient(135deg,#4285f4,#34a853);border:none;border-radius:9px;color:#fff;font-size:.72rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;transition:opacity .18s}
-.gemini-save-btn:hover{opacity:.85}
-.gemini-status{display:flex;align-items:center;gap:.4rem;font-size:.65rem;margin-top:.4rem}
-.gemini-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.gemini-dot.connected{background:#34d399;box-shadow:0 0 6px #34d39988}
-.gemini-dot.disconnected{background:#f87171}
-.gemini-dot.loading{background:#f59e0b;animation:pulse 1s ease-in-out infinite}
+/* ── OpenRouter AI Integration ── */
+.openrouter-api-wrap{display:flex;gap:.5rem;align-items:center;margin-top:.6rem}
+.openrouter-api-input{flex:1;background:rgba(10,10,22,.7);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.5rem .75rem;color:var(--text-primary);font-family:'DM Sans',sans-serif;font-size:.76rem;transition:border-color .2s}
+.openrouter-api-input:focus{outline:none;border-color:rgba(99,102,241,.6);box-shadow:0 0 0 3px rgba(99,102,241,.1)}
+.openrouter-save-btn{padding:.45rem .9rem;background:linear-gradient(135deg,#4285f4,#34a853);border:none;border-radius:9px;color:#fff;font-size:.72rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;transition:opacity .18s}
+.openrouter-save-btn:hover{opacity:.85}
+.openrouter-status{display:flex;align-items:center;gap:.4rem;font-size:.65rem;margin-top:.4rem}
+.openrouter-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.openrouter-dot.connected{background:#34d399;box-shadow:0 0 6px #34d39988}
+.openrouter-dot.disconnected{background:#f87171}
+.openrouter-dot.loading{background:#f59e0b;animation:pulse 1s ease-in-out infinite}
 /* Coach mode toggle */
 .coach-mode-wrap{display:flex;align-items:center;gap:.5rem;margin-top:.7rem;padding:.5rem .7rem;background:rgba(66,133,244,.06);border:1px solid rgba(66,133,244,.15);border-radius:10px}
 .coach-mode-lbl{font-size:.7rem;color:var(--text-secondary);flex:1}
@@ -956,34 +956,34 @@ h1,h2,h3,h4{font-family:'Syne',sans-serif}
 .coach-mode-slider::before{content:'';position:absolute;left:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .3s cubic-bezier(0.34,1.56,0.64,1)}
 .coach-mode-switch input:checked+.coach-mode-slider{background:linear-gradient(135deg,#4285f4,#34a853)}
 .coach-mode-switch input:checked+.coach-mode-slider::before{transform:translateX(20px)}
-/* Gemini-only coach display */
-.coach-card.gemini-mode .coach-tabs{display:none}
-.coach-card.gemini-mode .coach-panels .coach-panel{display:none}
-.coach-card.gemini-mode #cp-gemini{display:block}
-.coach-card.gemini-mode .coach-hdr .coach-icon::after{content:' 🧠';font-style:normal}
-.gemini-clear-btn{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.2);border-radius:7px;color:#f87171;font-size:.65rem;font-weight:700;cursor:pointer;padding:.28rem .65rem;font-family:'DM Sans',sans-serif;transition:all .18s;margin-top:.5rem;display:block;width:100%;text-align:center}
-.gemini-clear-btn:hover{background:rgba(248,113,113,.22)}
-.gemini-panel{display:flex;flex-direction:column;gap:.5rem}
-.gemini-loading{display:flex;align-items:center;gap:.65rem;padding:.75rem .8rem;background:rgba(66,133,244,.06);border:1px solid rgba(66,133,244,.2);border-radius:12px}
-.gemini-loading-dots{display:flex;gap:.3rem}
-.gemini-loading-dots span{width:6px;height:6px;border-radius:50%;background:#4285f4;animation:gdot .9s ease-in-out infinite}
-.gemini-loading-dots span:nth-child(2){animation-delay:.15s}
-.gemini-loading-dots span:nth-child(3){animation-delay:.3s}
+/* OpenRouter-only coach display */
+.coach-card.openrouter-mode .coach-tabs{display:none}
+.coach-card.openrouter-mode .coach-panels .coach-panel{display:none}
+.coach-card.openrouter-mode #cp-openrouter{display:block}
+.coach-card.openrouter-mode .coach-hdr .coach-icon::after{content:' 🧠';font-style:normal}
+.openrouter-clear-btn{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.2);border-radius:7px;color:#f87171;font-size:.65rem;font-weight:700;cursor:pointer;padding:.28rem .65rem;font-family:'DM Sans',sans-serif;transition:all .18s;margin-top:.5rem;display:block;width:100%;text-align:center}
+.openrouter-clear-btn:hover{background:rgba(248,113,113,.22)}
+.openrouter-panel{display:flex;flex-direction:column;gap:.5rem}
+.openrouter-loading{display:flex;align-items:center;gap:.65rem;padding:.75rem .8rem;background:rgba(66,133,244,.06);border:1px solid rgba(66,133,244,.2);border-radius:12px}
+.openrouter-loading-dots{display:flex;gap:.3rem}
+.openrouter-loading-dots span{width:6px;height:6px;border-radius:50%;background:#4285f4;animation:gdot .9s ease-in-out infinite}
+.openrouter-loading-dots span:nth-child(2){animation-delay:.15s}
+.openrouter-loading-dots span:nth-child(3){animation-delay:.3s}
 @keyframes gdot{0%,80%,100%{transform:scale(.6);opacity:.4}40%{transform:scale(1);opacity:1}}
-.gemini-msg{padding:.65rem .8rem;border-radius:11px;font-size:.76rem;line-height:1.6;border:1px solid;animation:coachIn .3s var(--ease-out)}
-.gemini-msg-urgent{background:rgba(239,68,68,.07);border-color:rgba(239,68,68,.25)}
-.gemini-msg-warn{background:rgba(245,158,11,.07);border-color:rgba(245,158,11,.25)}
-.gemini-msg-good{background:rgba(16,185,129,.07);border-color:rgba(16,185,129,.25)}
-.gemini-msg-tip{background:rgba(66,133,244,.07);border-color:rgba(66,133,244,.25)}
-.gemini-msg-section{font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.3rem;opacity:.7}
-.gemini-refresh-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:.3rem}
-.gemini-last-update{font-size:.6rem;color:var(--text-muted)}
-.gemini-refresh-btn{background:rgba(66,133,244,.12);border:1px solid rgba(66,133,244,.28);border-radius:7px;color:#4285f4;font-size:.62rem;font-weight:700;cursor:pointer;padding:.22rem .6rem;font-family:'DM Sans',sans-serif;transition:all .18s;display:flex;align-items:center;gap:.3rem}
-.gemini-refresh-btn:hover{background:rgba(66,133,244,.22)}
-.gemini-refresh-btn:disabled{opacity:.45;cursor:not-allowed}
-.gemini-powered{font-size:.58rem;color:rgba(66,133,244,.55);display:flex;align-items:center;gap:.25rem;margin-top:.4rem}
-.coach-tab.gemini-tab{background:linear-gradient(135deg,rgba(66,133,244,.12),rgba(52,168,83,.08));border:1px solid rgba(66,133,244,.2)!important}
-.coach-tab.gemini-tab.active{background:linear-gradient(135deg,rgba(66,133,244,.3),rgba(52,168,83,.15));border-color:rgba(66,133,244,.5)!important}
+.openrouter-msg{padding:.65rem .8rem;border-radius:11px;font-size:.76rem;line-height:1.6;border:1px solid;animation:coachIn .3s var(--ease-out)}
+.openrouter-msg-urgent{background:rgba(239,68,68,.07);border-color:rgba(239,68,68,.25)}
+.openrouter-msg-warn{background:rgba(245,158,11,.07);border-color:rgba(245,158,11,.25)}
+.openrouter-msg-good{background:rgba(16,185,129,.07);border-color:rgba(16,185,129,.25)}
+.openrouter-msg-tip{background:rgba(66,133,244,.07);border-color:rgba(66,133,244,.25)}
+.openrouter-msg-section{font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.3rem;opacity:.7}
+.openrouter-refresh-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:.3rem}
+.openrouter-last-update{font-size:.6rem;color:var(--text-muted)}
+.openrouter-refresh-btn{background:rgba(66,133,244,.12);border:1px solid rgba(66,133,244,.28);border-radius:7px;color:#4285f4;font-size:.62rem;font-weight:700;cursor:pointer;padding:.22rem .6rem;font-family:'DM Sans',sans-serif;transition:all .18s;display:flex;align-items:center;gap:.3rem}
+.openrouter-refresh-btn:hover{background:rgba(66,133,244,.22)}
+.openrouter-refresh-btn:disabled{opacity:.45;cursor:not-allowed}
+.openrouter-powered{font-size:.58rem;color:rgba(66,133,244,.55);display:flex;align-items:center;gap:.25rem;margin-top:.4rem}
+.coach-tab.openrouter-tab{background:linear-gradient(135deg,rgba(66,133,244,.12),rgba(52,168,83,.08));border:1px solid rgba(66,133,244,.2)!important}
+.coach-tab.openrouter-tab.active{background:linear-gradient(135deg,rgba(66,133,244,.3),rgba(52,168,83,.15));border-color:rgba(66,133,244,.5)!important}
 </style>
 </head>
 <body>
@@ -1202,7 +1202,7 @@ h1,h2,h3,h4{font-family:'Syne',sans-serif}
           <div class="coach-tab active" onclick="coachTab('actions',this)">🎯 Priority Actions</div>
           <div class="coach-tab" onclick="coachTab('stats',this)">📊 Performance</div>
           <div class="coach-tab" onclick="coachTab('plan',this)">📋 Today's Plan</div>
-          <div class="coach-tab gemini-tab" onclick="coachTab('gemini',this)">🧠 Gemini AI</div>
+          <div class="coach-tab openrouter-tab" onclick="coachTab('openrouter',this)">🧠 OpenRouter AI</div>
         </div>
         <div class="coach-panels">
           <div class="coach-panel active" id="cp-actions">
@@ -1214,20 +1214,20 @@ h1,h2,h3,h4{font-family:'Syne',sans-serif}
           <div class="coach-panel" id="cp-plan">
             <div id="coach-plan-content"></div>
           </div>
-          <div class="coach-panel" id="cp-gemini">
-            <div class="gemini-refresh-row">
-              <span class="gemini-last-update" id="gemini-last-update">Not fetched yet</span>
-              <button class="gemini-refresh-btn" id="gemini-refresh-btn" onclick="geminiRefresh()">
-                ✦ Ask Gemini Now
+          <div class="coach-panel" id="cp-openrouter">
+            <div class="openrouter-refresh-row">
+              <span class="openrouter-last-update" id="openrouter-last-update">Not fetched yet</span>
+              <button class="openrouter-refresh-btn" id="openrouter-refresh-btn" onclick="openrouterRefresh()">
+                ✦ Ask OpenRouter Now
               </button>
             </div>
-            <div id="gemini-content">
+            <div id="openrouter-content">
               <div style="text-align:center;padding:1.5rem;color:var(--text-muted);font-size:.78rem">
                 <div style="font-size:1.8rem;margin-bottom:.5rem">🔑</div>
-                Add your Gemini API key in <strong>Settings → Gemini AI</strong> to enable real AI coaching.
+                Add your OpenRouter API key in <strong>Settings → OpenRouter AI</strong> to enable real AI coaching.
               </div>
             </div>
-            <div class="gemini-powered" id="gemini-powered-lbl">✦ Powered by Google Gemini · Auto-selects best available model · Updates every 2h</div>
+            <div class="openrouter-powered" id="openrouter-powered-lbl">✦ Powered by Google OpenRouter · Auto-selects best available model · Updates every 2h</div>
           </div>
         </div>
       </div>
@@ -1258,38 +1258,38 @@ h1,h2,h3,h4{font-family:'Syne',sans-serif}
     <div class="vt"><span>⚙️</span>Settings</div>
     <div class="set-grid">
       <div class="set-sec">
-        <h3>🧠 Gemini AI Coach</h3>
-        <p style="font-size:.75rem;color:var(--text-secondary);margin-bottom:.6rem;line-height:1.65">Connect your Google Gemini API key for real AI coaching. <strong style="color:#f59e0b">⚠️ Requires HTTPS hosting</strong> — the app must be opened via a link (e.g. Netlify), not from a local file, for Gemini to work.</p>
+        <h3>🧠 OpenRouter AI Coach</h3>
+        <p style="font-size:.75rem;color:var(--text-secondary);margin-bottom:.6rem;line-height:1.65">Connect your Google OpenRouter API key for real AI coaching. <strong style="color:#f59e0b">⚠️ Requires HTTPS hosting</strong> — the app must be opened via a link (e.g. Netlify), not from a local file, for OpenRouter to work.</p>
 
         <div style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:10px;padding:.65rem .9rem;font-size:.7rem;line-height:1.75;color:var(--text-secondary);margin-bottom:.7rem">
           <strong style="color:#f59e0b">📡 How to host for free (takes 2 min):</strong><br>
           1. Go to <strong>netlify.com/drop</strong> on any browser<br>
           2. Drag &amp; drop your <strong>index.html</strong> file onto the page<br>
           3. You get a free link like <em>https://random-name.netlify.app</em><br>
-          4. Open that link — Gemini will work perfectly ✓
+          4. Open that link — OpenRouter will work perfectly ✓
         </div>
 
-        <div class="gemini-api-wrap" style="flex-direction:column;gap:.5rem">
+        <div class="openrouter-api-wrap" style="flex-direction:column;gap:.5rem">
           <div style="display:flex;gap:.5rem;align-items:center">
-            <input type="text" id="gemini-key-input" class="gemini-api-input"
-              placeholder="Paste your Gemini API key here…"
+            <input type="text" id="openrouter-key-input" class="openrouter-api-input"
+              placeholder="Paste your OpenRouter API key here…"
               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
               style="font-family:monospace;font-size:.7rem;letter-spacing:.02em"
-              oninput="geminiKeyPreview(this.value)">
-            <button class="gemini-save-btn" onclick="geminySaveKey()" style="flex-shrink:0">Save Key</button>
+              oninput="openrouterKeyPreview(this.value)">
+            <button class="openrouter-save-btn" onclick="geminySaveKey()" style="flex-shrink:0">Save Key</button>
           </div>
-          <div id="gemini-key-preview" style="font-size:.65rem;color:var(--text-muted);min-height:1rem;font-family:monospace;word-break:break-all;padding:.2rem .4rem;background:rgba(0,0,0,.15);border-radius:6px;display:none"></div>
+          <div id="openrouter-key-preview" style="font-size:.65rem;color:var(--text-muted);min-height:1rem;font-family:monospace;word-break:break-all;padding:.2rem .4rem;background:rgba(0,0,0,.15);border-radius:6px;display:none"></div>
         </div>
-        <div class="gemini-status" id="gemini-key-status">
-          <div class="gemini-dot disconnected" id="gemini-status-dot"></div>
-          <span id="gemini-status-text" style="color:var(--text-muted)">No API key saved</span>
+        <div class="openrouter-status" id="openrouter-key-status">
+          <div class="openrouter-dot disconnected" id="openrouter-status-dot"></div>
+          <span id="openrouter-status-text" style="color:var(--text-muted)">No API key saved</span>
         </div>
-        <button class="gemini-clear-btn" id="gemini-clear-btn" onclick="geminiClearKey()" style="display:none">🗑️ Remove API Key &amp; Switch Back to Built-in Coach</button>
+        <button class="openrouter-clear-btn" id="openrouter-clear-btn" onclick="openrouterClearKey()" style="display:none">🗑️ Remove API Key &amp; Switch Back to Built-in Coach</button>
 
         <div class="coach-mode-wrap" id="coach-mode-wrap" style="display:none">
-          <span class="coach-mode-lbl">🧠 <strong>Use Gemini AI</strong> as my coach (replaces built-in coach)</span>
+          <span class="coach-mode-lbl">🧠 <strong>Use OpenRouter AI</strong> as my coach (replaces built-in coach)</span>
           <label class="coach-mode-switch">
-            <input type="checkbox" id="gemini-mode-toggle" onchange="geminiToggleMode(this.checked)">
+            <input type="checkbox" id="openrouter-mode-toggle" onchange="openrouterToggleMode(this.checked)">
             <span class="coach-mode-slider"></span>
           </label>
         </div>
@@ -1876,9 +1876,9 @@ const sv = view => {
     const lpt=document.getElementById('lp-tablet');
     const lpm=document.getElementById('lp-mobile');
     if(lpt&&lpm){lpt.classList.toggle('active',lm==='tablet');lpm.classList.toggle('active',lm==='mobile');}
-    geminiUpdateStatusUI();
-    const toggle=document.getElementById('gemini-mode-toggle');
-    if(toggle) toggle.checked = geminiGetMode()==='gemini';
+    openrouterUpdateStatusUI();
+    const toggle=document.getElementById('openrouter-mode-toggle');
+    if(toggle) toggle.checked = openrouterGetMode()==='openrouter';
   }
 };
 
@@ -1987,15 +1987,15 @@ const renderDash = () => {
 const coachTab=(tab,btn)=>{
   try{ sndTap(); }catch(e){}
   try{
-    // If Gemini mode is active and user clicks a built-in tab, redirect to Gemini tab
-    if(tab !== 'gemini' && geminiIsActive()){
-      const gt=document.querySelector('.coach-tab.gemini-tab');
+    // If OpenRouter mode is active and user clicks a built-in tab, redirect to OpenRouter tab
+    if(tab !== 'openrouter' && openrouterIsActive()){
+      const gt=document.querySelector('.coach-tab.openrouter-tab');
       if(gt){
         document.querySelectorAll('.coach-tab').forEach(b=>b.classList.remove('active'));
         gt.classList.add('active');
-        const gp=document.getElementById('cp-gemini');
+        const gp=document.getElementById('cp-openrouter');
         if(gp){ document.querySelectorAll('.coach-panel').forEach(p=>p.classList.remove('active')); gp.classList.add('active'); }
-        try{ geminiLoadCache(); }catch(e){}
+        try{ openrouterLoadCache(); }catch(e){}
         return;
       }
     }
@@ -2006,7 +2006,7 @@ const coachTab=(tab,btn)=>{
   if(btn) btn.classList.add('active');
   const panel = document.getElementById('cp-'+tab);
   if(panel) panel.classList.add('active');
-  if(tab==='gemini'){ try{ geminiLoadCache(); }catch(e){} }
+  if(tab==='openrouter'){ try{ openrouterLoadCache(); }catch(e){} }
 };
 
 const NEET_DATE = new Date('2027-05-02'); // NEET UG 2027 target date
@@ -3456,12 +3456,12 @@ const init=()=>{
   trInitForm();
   setTimeout(()=>{ renderInsights(); _checkNotifBanner(); },200);
   setTimeout(()=>document.getElementById('ls').classList.add('out'),1700);
-  // Gemini — load cache, start 2h auto-refresh
+  // OpenRouter — load cache, start 2h auto-refresh
   setTimeout(()=>{
-    try{ geminiUpdateStatusUI(); }catch(e){ console.warn('geminiUpdateStatusUI:',e); }
-    try{ geminiApplyMode(); }catch(e){ console.warn('geminiApplyMode:',e); }
-    try{ geminiLoadCache(); }catch(e){ console.warn('geminiLoadCache:',e); }
-    try{ geminiStartAutoRefresh(); }catch(e){ console.warn('geminiStartAutoRefresh:',e); }
+    try{ openrouterUpdateStatusUI(); }catch(e){ console.warn('openrouterUpdateStatusUI:',e); }
+    try{ openrouterApplyMode(); }catch(e){ console.warn('openrouterApplyMode:',e); }
+    try{ openrouterLoadCache(); }catch(e){ console.warn('openrouterLoadCache:',e); }
+    try{ openrouterStartAutoRefresh(); }catch(e){ console.warn('openrouterStartAutoRefresh:',e); }
   }, 2500);
   document.getElementById('mo').addEventListener('click',e=>{if(e.target===document.getElementById('mo'))closeModal();});
   document.getElementById('mlog-modal').addEventListener('click',e=>{if(e.target===document.getElementById('mlog-modal'))closeMLog();});
@@ -5931,36 +5931,36 @@ const trInitForm=()=>{
 /* ============================================================
    GEMINI AI INTEGRATION
    ============================================================ */
-const GEMINI_KEY_STORAGE = 'neetCC_geminiKey';
-const GEMINI_CACHE_KEY   = 'neetCC_geminiCache';
+const GEMINI_KEY_STORAGE = 'neetCC_openrouterKey';
+const GEMINI_CACHE_KEY   = 'neetCC_openrouterCache';
 const GEMINI_INTERVAL_MS = 2 * 60 * 60 * 1000; // 2 hours
-let _geminiTimer = null;
-let _geminiFetching = false;
+let _openrouterTimer = null;
+let _openrouterFetching = false;
 
 // ── Key management ──
-const geminiGetKey = () => {
+const openrouterGetKey = () => {
   try { return localStorage.getItem(GEMINI_KEY_STORAGE) || ''; }
   catch(e){ return ''; }
 };
-const GEMINI_MODE_KEY = 'neetCC_geminiMode'; // 'gemini' | 'builtin'
-const geminiGetMode  = () => { try{ return localStorage.getItem(GEMINI_MODE_KEY) || 'builtin'; }catch(e){ return 'builtin'; } };
-const geminiIsActive = () => { try{ return !!geminiGetKey() && geminiGetMode() === 'gemini'; }catch(e){ return false; } };
+const GEMINI_MODE_KEY = 'neetCC_openrouterMode'; // 'openrouter' | 'builtin'
+const openrouterGetMode  = () => { try{ return localStorage.getItem(GEMINI_MODE_KEY) || 'builtin'; }catch(e){ return 'builtin'; } };
+const openrouterIsActive = () => { try{ return !!openrouterGetKey() && openrouterGetMode() === 'openrouter'; }catch(e){ return false; } };
 
-const geminiApplyMode = () => {
+const openrouterApplyMode = () => {
   const card = document.getElementById('coach-card');
   if(!card) return;
-  if(geminiIsActive()){
-    card.classList.add('gemini-mode');
-    // Auto-switch to gemini tab
+  if(openrouterIsActive()){
+    card.classList.add('openrouter-mode');
+    // Auto-switch to openrouter tab
     document.querySelectorAll('.coach-tab').forEach(b=>b.classList.remove('active'));
     document.querySelectorAll('.coach-panel').forEach(p=>p.style.display='');
-    const gt=document.querySelector('.coach-tab.gemini-tab');
+    const gt=document.querySelector('.coach-tab.openrouter-tab');
     if(gt) gt.classList.add('active');
     // Show the title update
     const titleEl=document.querySelector('.coach-title');
-    if(titleEl) titleEl.textContent='AI Study Coach — Gemini';
+    if(titleEl) titleEl.textContent='AI Study Coach — OpenRouter';
   } else {
-    card.classList.remove('gemini-mode');
+    card.classList.remove('openrouter-mode');
     const titleEl=document.querySelector('.coach-title');
     if(titleEl) titleEl.textContent='AI Study Coach';
     // Restore first tab active if none
@@ -5972,34 +5972,34 @@ const geminiApplyMode = () => {
   }
 };
 
-const geminiToggleMode = (on) => {
-  localStorage.setItem(GEMINI_MODE_KEY, on ? 'gemini' : 'builtin');
-  geminiApplyMode();
+const openrouterToggleMode = (on) => {
+  localStorage.setItem(GEMINI_MODE_KEY, on ? 'openrouter' : 'builtin');
+  openrouterApplyMode();
   if(on){
-    showToast('🧠 Gemini AI is now your coach!','suc');
-    geminiLoadCache(); // load or fetch immediately
+    showToast('🧠 OpenRouter AI is now your coach!','suc');
+    openrouterLoadCache(); // load or fetch immediately
   } else {
     showToast('🤖 Switched back to Built-in Coach','inf');
     renderCoach(); // re-render rule-based coach
   }
 };
 
-const geminiClearKey = () => {
-  if(!confirm('Remove your Gemini API key and switch back to the built-in coach?')) return;
+const openrouterClearKey = () => {
+  if(!confirm('Remove your OpenRouter API key and switch back to the built-in coach?')) return;
   localStorage.removeItem(GEMINI_KEY_STORAGE);
   localStorage.removeItem(GEMINI_CACHE_KEY);
   localStorage.setItem(GEMINI_MODE_KEY,'builtin');
-  _geminiActiveModel = null;
-  clearInterval(_geminiTimer);
-  geminiUpdateStatusUI();
-  geminiApplyMode();
+  _openrouterActiveModel = null;
+  clearInterval(_openrouterTimer);
+  openrouterUpdateStatusUI();
+  openrouterApplyMode();
   renderCoach();
-  showToast('🔑 Gemini key removed. Built-in Coach restored.','inf');
+  showToast('🔑 OpenRouter key removed. Built-in Coach restored.','inf');
 };
 
 // Show a preview of what's typed so user can verify the key is there
-const geminiKeyPreview = (val) => {
-  const prev = document.getElementById('gemini-key-preview');
+const openrouterKeyPreview = (val) => {
+  const prev = document.getElementById('openrouter-key-preview');
   if(!prev) return;
   // Strip invisible chars to show the real value
   const cleaned = val.replace(/[\u200B-\u200D\uFEFF\u00A0\r\n\t]/g,'').trim();
@@ -6015,7 +6015,7 @@ const geminiKeyPreview = (val) => {
 };
 
 const geminySaveKey = () => {
-  const inp = document.getElementById('gemini-key-input');
+  const inp = document.getElementById('openrouter-key-input');
   if(!inp){ showToast('Input field not found — refresh the page','war'); return; }
 
   // Aggressively clean the pasted value — strip invisible Unicode, whitespace, newlines
@@ -6033,7 +6033,7 @@ const geminySaveKey = () => {
   }
   if(key.length < 20){
     sndWarn();
-    showToast(`Key too short (${key.length} chars) — Gemini keys are 39+ characters`,'war');
+    showToast(`Key too short (${key.length} chars) — OpenRouter keys are 39+ characters`,'war');
     return;
   }
   if(!key.startsWith('AIza')){
@@ -6042,50 +6042,50 @@ const geminySaveKey = () => {
   }
 
   localStorage.setItem(GEMINI_KEY_STORAGE, key);
-  localStorage.setItem(GEMINI_MODE_KEY, 'gemini');
+  localStorage.setItem(GEMINI_MODE_KEY, 'openrouter');
   inp.value = '';
-  const prev = document.getElementById('gemini-key-preview');
+  const prev = document.getElementById('openrouter-key-preview');
   if(prev) prev.style.display = 'none';
-  geminiUpdateStatusUI();
-  geminiApplyMode();
+  openrouterUpdateStatusUI();
+  openrouterApplyMode();
   sndComplete();
-  showToast(`🔑 Key saved (${key.length} chars)! Connecting to Gemini…`,'suc');
-  geminiStartAutoRefresh();
-  setTimeout(()=>geminiFetch(), 500); // small delay so UI settles first
+  showToast(`🔑 Key saved (${key.length} chars)! Connecting to OpenRouter…`,'suc');
+  openrouterStartAutoRefresh();
+  setTimeout(()=>openrouterFetch(), 500); // small delay so UI settles first
 };
 
-const geminiUpdateStatusUI = () => {
-  const key = geminiGetKey();
-  const dot = document.getElementById('gemini-status-dot');
-  const txt = document.getElementById('gemini-status-text');
-  const inp = document.getElementById('gemini-key-input');
-  const clearBtn = document.getElementById('gemini-clear-btn');
+const openrouterUpdateStatusUI = () => {
+  const key = openrouterGetKey();
+  const dot = document.getElementById('openrouter-status-dot');
+  const txt = document.getElementById('openrouter-status-text');
+  const inp = document.getElementById('openrouter-key-input');
+  const clearBtn = document.getElementById('openrouter-clear-btn');
   const modeWrap = document.getElementById('coach-mode-wrap');
-  const toggle = document.getElementById('gemini-mode-toggle');
+  const toggle = document.getElementById('openrouter-mode-toggle');
 
   if(dot&&txt){
     if(key){
-      dot.className='gemini-dot connected';
-      const modelLabel = _geminiActiveModel
-        ? (GEMINI_MODELS.find(m=>m.id===_geminiActiveModel)?.label||_geminiActiveModel)
+      dot.className='openrouter-dot connected';
+      const modelLabel = _openrouterActiveModel
+        ? (GEMINI_MODELS.find(m=>m.id===_openrouterActiveModel)?.label||_openrouterActiveModel)
         : 'Auto-selecting model…';
       txt.textContent = `Key saved (${key.length} chars) · ${modelLabel} · Active ✓`;
       txt.style.color = '#34d399';
       if(inp) inp.placeholder='Key already saved — paste new key to replace';
     } else {
-      dot.className='gemini-dot disconnected';
+      dot.className='openrouter-dot disconnected';
       txt.textContent='No API key saved';
       txt.style.color='var(--text-muted)';
-      if(inp) inp.placeholder='Paste your Gemini API key (AIza…)';
+      if(inp) inp.placeholder='Paste your OpenRouter API key (AIza…)';
     }
   }
   if(clearBtn) clearBtn.style.display = key ? 'block' : 'none';
   if(modeWrap) modeWrap.style.display = key ? 'flex' : 'none';
-  if(toggle) toggle.checked = geminiGetMode() === 'gemini';
+  if(toggle) toggle.checked = openrouterGetMode() === 'openrouter';
 };
 
 // ── Build the prompt ──
-const geminiBuildPrompt = () => {
+const openrouterBuildPrompt = () => {
   const now = new Date();
   const currM = getCurrMonth();
   const sessions = S.sessions || [];
@@ -6285,16 +6285,16 @@ OUTPUT — Return ONLY this JSON object, nothing else:
 }`;
 };
 
-// ── Call Gemini API — cascading model fallback ──
+// ── Call OpenRouter API — cascading model fallback ──
 // Priority order using correct API model IDs
 const GEMINI_MODELS = [
-  { id: 'gemini-2.5-pro-exp-03-25',      label: 'Gemini 2.5 Pro' },
-  { id: 'gemini-2.5-flash-preview-04-17',label: 'Gemini 2.5 Flash' },
-  { id: 'gemini-2.0-flash',              label: 'Gemini 2.0 Flash' },
-  { id: 'gemini-1.5-pro-latest',         label: 'Gemini 1.5 Pro' },
-  { id: 'gemini-1.5-flash-latest',       label: 'Gemini 1.5 Flash' },
+  { id: 'openrouter-2.5-pro-exp-03-25',      label: 'OpenRouter 2.5 Pro' },
+  { id: 'openrouter-2.5-flash-preview-04-17',label: 'OpenRouter 2.5 Flash' },
+  { id: 'openrouter-2.0-flash',              label: 'OpenRouter 2.0 Flash' },
+  { id: 'openrouter-1.5-pro-latest',         label: 'OpenRouter 1.5 Pro' },
+  { id: 'openrouter-1.5-flash-latest',       label: 'OpenRouter 1.5 Flash' },
 ];
-let _geminiActiveModel = null;
+let _openrouterActiveModel = null;
 
 // Robustly extract the first valid JSON object from any model output
 const _extractJSON = (raw) => {
@@ -6309,8 +6309,8 @@ const _extractJSON = (raw) => {
   return JSON.parse(s);
 };
 
-const geminiCallAPI = async (prompt) => {
-  const key = geminiGetKey();
+const openrouterCallAPI = async (prompt) => {
+  const key = openrouterGetKey();
   if(!key) throw new Error('No API key');
 
   const BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
@@ -6323,9 +6323,9 @@ const geminiCallAPI = async (prompt) => {
   });
 
   // If a model worked before, put it first
-  const ordered = _geminiActiveModel
-    ? [GEMINI_MODELS.find(m => m.id === _geminiActiveModel),
-       ...GEMINI_MODELS.filter(m => m.id !== _geminiActiveModel)].filter(Boolean)
+  const ordered = _openrouterActiveModel
+    ? [GEMINI_MODELS.find(m => m.id === _openrouterActiveModel),
+       ...GEMINI_MODELS.filter(m => m.id !== _openrouterActiveModel)].filter(Boolean)
     : GEMINI_MODELS;
 
   let lastErr = null;
@@ -6349,7 +6349,7 @@ const geminiCallAPI = async (prompt) => {
       if(res.status === 404 || res.status === 429 || res.status === 503){
         const e = await res.json().catch(()=>({}));
         lastErr = new Error(`${model.label} unavailable (${res.status})`);
-        console.warn(`[Gemini] Skipping ${model.label}:`, e?.error?.message || res.status);
+        console.warn(`[OpenRouter] Skipping ${model.label}:`, e?.error?.message || res.status);
         continue;
       }
 
@@ -6357,14 +6357,14 @@ const geminiCallAPI = async (prompt) => {
       if(res.status === 400){
         const e = await res.json().catch(()=>({}));
         lastErr = new Error(`${model.label}: ${e?.error?.message || 'bad request'}`);
-        console.warn(`[Gemini] 400 on ${model.label}, trying next:`, e?.error?.message);
+        console.warn(`[OpenRouter] 400 on ${model.label}, trying next:`, e?.error?.message);
         continue;
       }
 
       if(!res.ok){
         const e = await res.json().catch(()=>({}));
         lastErr = new Error(`${model.label}: HTTP ${res.status}`);
-        console.warn(`[Gemini] ${res.status} on ${model.label}, trying next`);
+        console.warn(`[OpenRouter] ${res.status} on ${model.label}, trying next`);
         continue;
       }
 
@@ -6373,8 +6373,8 @@ const geminiCallAPI = async (prompt) => {
       const parsed = _extractJSON(raw);
 
       // ✓ Success — remember this model
-      _geminiActiveModel = model.id;
-      geminiUpdateStatusUI();
+      _openrouterActiveModel = model.id;
+      openrouterUpdateStatusUI();
       return parsed;
 
     } catch(err){
@@ -6382,22 +6382,22 @@ const geminiCallAPI = async (prompt) => {
       if(err.message.startsWith('Invalid API key')){ throw err; }
       // Everything else — log and try next model
       lastErr = err;
-      console.warn(`[Gemini] ${model.label} error, trying next:`, err.message);
+      console.warn(`[OpenRouter] ${model.label} error, trying next:`, err.message);
     }
   }
 
   // All models failed
   const hint = lastErr?.message?.includes('Failed to fetch')
     ? 'Network error — check your internet connection and try again.'
-    : (lastErr?.message || 'All Gemini models returned errors.');
+    : (lastErr?.message || 'All OpenRouter models returned errors.');
   throw new Error(hint);
 };
 
-// ── Render Gemini response ──
-const geminiRender = (result, ts) => {
-  const el = document.getElementById('gemini-content');
-  const lastEl = document.getElementById('gemini-last-update');
-  const poweredEl = document.getElementById('gemini-powered-lbl');
+// ── Render OpenRouter response ──
+const openrouterRender = (result, ts) => {
+  const el = document.getElementById('openrouter-content');
+  const lastEl = document.getElementById('openrouter-last-update');
+  const poweredEl = document.getElementById('openrouter-powered-lbl');
   if(!el) return;
 
   const fmt = t => {
@@ -6405,8 +6405,8 @@ const geminiRender = (result, ts) => {
     return d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})+' · '+d.toLocaleDateString('en-IN',{day:'numeric',month:'short'});
   };
   if(lastEl) lastEl.textContent = `Last updated: ${fmt(ts)}`;
-  if(poweredEl && _geminiActiveModel){
-    const label = GEMINI_MODELS.find(m=>m.id===_geminiActiveModel)?.label || _geminiActiveModel;
+  if(poweredEl && _openrouterActiveModel){
+    const label = GEMINI_MODELS.find(m=>m.id===_openrouterActiveModel)?.label || _openrouterActiveModel;
     poweredEl.textContent = `✦ ${label} · Auto-refresh every 2h`;
   }
 
@@ -6422,13 +6422,13 @@ const geminiRender = (result, ts) => {
   const sectionLbl = (icon,text,color) =>
     `<div style="font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:${color};margin-bottom:.4rem;display:flex;align-items:center;gap:.3rem">${icon} ${text}</div>`;
 
-  el.innerHTML = `<div class="gemini-panel">
+  el.innerHTML = `<div class="openrouter-panel">
 
     ${result.priority_actions?.length ? `
     <div style="margin-bottom:.6rem">
       ${sectionLbl('🎯','Priority Actions for Today','#4285f4')}
       ${result.priority_actions.map((a,i)=>`
-        <div class="gemini-msg gemini-msg-${typeMap(a)}" style="animation-delay:${i*.07}s;margin-bottom:.35rem">
+        <div class="openrouter-msg openrouter-msg-${typeMap(a)}" style="animation-delay:${i*.07}s;margin-bottom:.35rem">
           ${cleanTag(a)}
         </div>`).join('')}
     </div>` : ''}
@@ -6437,13 +6437,13 @@ const geminiRender = (result, ts) => {
     <div style="margin-bottom:.6rem">
       ${sectionLbl('⚡','Quick Wins (Next 48 Hours)','#34a853')}
       ${result.quick_wins.map((q,i)=>`
-        <div class="gemini-msg gemini-msg-good" style="animation-delay:${(.35+i*.07)}s;margin-bottom:.3rem">
+        <div class="openrouter-msg openrouter-msg-good" style="animation-delay:${(.35+i*.07)}s;margin-bottom:.3rem">
           ${q}
         </div>`).join('')}
     </div>` : ''}
 
     ${result.deep_analysis ? `
-    <div class="gemini-msg gemini-msg-tip" style="animation-delay:.5s;margin-bottom:.6rem">
+    <div class="openrouter-msg openrouter-msg-tip" style="animation-delay:.5s;margin-bottom:.6rem">
       ${sectionLbl('🧠','Deep Analysis','#818cf8')}
       <div style="font-size:.77rem;line-height:1.65;color:var(--text-primary)">${result.deep_analysis}</div>
     </div>` : ''}
@@ -6452,7 +6452,7 @@ const geminiRender = (result, ts) => {
     <div style="margin-bottom:.6rem">
       ${sectionLbl('⚠️','Danger Zones','#ef4444')}
       ${result.danger_zones.map((d,i)=>`
-        <div class="gemini-msg gemini-msg-urgent" style="animation-delay:${(.6+i*.07)}s;margin-bottom:.3rem">
+        <div class="openrouter-msg openrouter-msg-urgent" style="animation-delay:${(.6+i*.07)}s;margin-bottom:.3rem">
           ${d}
         </div>`).join('')}
     </div>` : ''}
@@ -6503,76 +6503,76 @@ const geminiRender = (result, ts) => {
 };
 
 // ── Fetch and cache ──
-const geminiFetch = async () => {
-  if(_geminiFetching) return;
-  const key = geminiGetKey();
-  if(!key){ geminiShowNoKey(); return; }
-  _geminiFetching = true;
-  const btn = document.getElementById('gemini-refresh-btn');
-  const dot = document.getElementById('gemini-status-dot');
-  if(btn){ btn.disabled=true; btn.innerHTML='<div class="gemini-loading-dots"><span></span><span></span><span></span></div> Thinking…'; }
-  if(dot) dot.className='gemini-dot loading';
+const openrouterFetch = async () => {
+  if(_openrouterFetching) return;
+  const key = openrouterGetKey();
+  if(!key){ openrouterShowNoKey(); return; }
+  _openrouterFetching = true;
+  const btn = document.getElementById('openrouter-refresh-btn');
+  const dot = document.getElementById('openrouter-status-dot');
+  if(btn){ btn.disabled=true; btn.innerHTML='<div class="openrouter-loading-dots"><span></span><span></span><span></span></div> Thinking…'; }
+  if(dot) dot.className='openrouter-dot loading';
 
-  const contentEl = document.getElementById('gemini-content');
-  if(contentEl) contentEl.innerHTML=`<div class="gemini-loading"><div class="gemini-loading-dots"><span></span><span></span><span></span></div><span style="font-size:.75rem;color:var(--text-secondary)">Gemini is analysing your study data…</span></div>`;
+  const contentEl = document.getElementById('openrouter-content');
+  if(contentEl) contentEl.innerHTML=`<div class="openrouter-loading"><div class="openrouter-loading-dots"><span></span><span></span><span></span></div><span style="font-size:.75rem;color:var(--text-secondary)">OpenRouter is analysing your study data…</span></div>`;
 
   try{
-    const prompt = geminiBuildPrompt();
-    const result = await geminiCallAPI(prompt);
+    const prompt = openrouterBuildPrompt();
+    const result = await openrouterCallAPI(prompt);
     const ts = Date.now();
     // Cache result
     localStorage.setItem(GEMINI_CACHE_KEY, JSON.stringify({result, ts}));
-    geminiRender(result, ts);
-    if(dot) dot.className='gemini-dot connected';
+    openrouterRender(result, ts);
+    if(dot) dot.className='openrouter-dot connected';
   } catch(err){
-    console.warn('Gemini error:',err);
+    console.warn('OpenRouter error:',err);
     const isAuthError = err.message?.includes('API_KEY') || err.message?.includes('401') || err.message?.includes('403');
-    if(contentEl) contentEl.innerHTML=`<div class="gemini-msg gemini-msg-urgent">
-      <div class="gemini-msg-section">⚠️ ${isAuthError?'Invalid API Key':'Connection Error'}</div>
+    if(contentEl) contentEl.innerHTML=`<div class="openrouter-msg openrouter-msg-urgent">
+      <div class="openrouter-msg-section">⚠️ ${isAuthError?'Invalid API Key':'Connection Error'}</div>
       ${isAuthError
-        ? 'Your API key appears to be invalid or expired. Please check your key in Settings → Gemini AI.'
-        : `Could not reach Gemini: ${err.message}. Check your internet connection and try again.`}
+        ? 'Your API key appears to be invalid or expired. Please check your key in Settings → OpenRouter AI.'
+        : `Could not reach OpenRouter: ${err.message}. Check your internet connection and try again.`}
     </div>`;
-    if(dot) dot.className='gemini-dot disconnected';
+    if(dot) dot.className='openrouter-dot disconnected';
   } finally{
-    _geminiFetching=false;
-    if(btn){ btn.disabled=false; btn.innerHTML='✦ Ask Gemini Now'; }
+    _openrouterFetching=false;
+    if(btn){ btn.disabled=false; btn.innerHTML='✦ Ask OpenRouter Now'; }
   }
 };
 
-const geminiRefresh = () => { sndTap(); geminiFetch(); };
+const openrouterRefresh = () => { sndTap(); openrouterFetch(); };
 
-const geminiShowNoKey = () => {
-  const el=document.getElementById('gemini-content');
+const openrouterShowNoKey = () => {
+  const el=document.getElementById('openrouter-content');
   if(el) el.innerHTML=`<div style="text-align:center;padding:1.5rem;color:var(--text-muted);font-size:.78rem">
     <div style="font-size:1.8rem;margin-bottom:.5rem">🔑</div>
-    Add your Gemini API key in <strong>Settings → Gemini AI</strong> to unlock real AI coaching.
+    Add your OpenRouter API key in <strong>Settings → OpenRouter AI</strong> to unlock real AI coaching.
   </div>`;
 };
 
 // ── Auto-refresh every 2 hours ──
-const geminiStartAutoRefresh = () => {
-  clearInterval(_geminiTimer);
-  _geminiTimer = setInterval(()=>{
-    if(geminiGetKey()) geminiFetch();
+const openrouterStartAutoRefresh = () => {
+  clearInterval(_openrouterTimer);
+  _openrouterTimer = setInterval(()=>{
+    if(openrouterGetKey()) openrouterFetch();
   }, GEMINI_INTERVAL_MS);
 };
 
 // ── Load cached result on startup ──
-const geminiLoadCache = () => {
-  const key = geminiGetKey();
-  if(!key){ geminiShowNoKey(); return; }
+const openrouterLoadCache = () => {
+  const key = openrouterGetKey();
+  if(!key){ openrouterShowNoKey(); return; }
   try{
     const cached = JSON.parse(localStorage.getItem(GEMINI_CACHE_KEY)||'null');
     if(cached?.result && cached?.ts){
-      geminiRender(cached.result, cached.ts);
+      openrouterRender(cached.result, cached.ts);
       // If cache is older than 2h, auto-refresh
-      if(Date.now()-cached.ts > GEMINI_INTERVAL_MS) setTimeout(geminiFetch, 3000);
+      if(Date.now()-cached.ts > GEMINI_INTERVAL_MS) setTimeout(openrouterFetch, 3000);
     } else {
       // No cache yet — fetch after 2s
-      setTimeout(geminiFetch, 2000);
+      setTimeout(openrouterFetch, 2000);
     }
-  } catch(e){ setTimeout(geminiFetch, 2000); }
+  } catch(e){ setTimeout(openrouterFetch, 2000); }
 };
 
 document.addEventListener('DOMContentLoaded',init);
